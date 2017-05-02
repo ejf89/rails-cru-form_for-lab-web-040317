@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Genres</title>
+    </head>
+    <body>
+        <% @genres.each do |g| %>
+        <%= link_to g.name, genre_path(g) %> <br>
+        <% end %>
+    </body>
+</html>
